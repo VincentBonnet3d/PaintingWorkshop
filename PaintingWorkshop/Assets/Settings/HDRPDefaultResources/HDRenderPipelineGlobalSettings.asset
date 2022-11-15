@@ -93,7 +93,7 @@ MonoBehaviour:
   rendererListCulling: 0
   DLSSProjectId: 000000
   useDLSSCustomProjectId: 0
-  supportProbeVolumes: 0
+  supportProbeVolumes: 1
   supportRuntimeDebugDisplay: 0
   apvScenesData:
     serializedBounds: []
