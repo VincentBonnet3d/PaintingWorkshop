@@ -29,7 +29,6 @@ Material:
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
   - _MASKMAP
-  - _MATERIAL_FEATURE_CLEAR_COAT
   - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
   m_InvalidKeywords:
@@ -337,7 +336,7 @@ Material:
     - _AlphaToMaskInspectorValue: 0
     - _Anisotropy: 0
     - _BlendMode: 0
-    - _CoatMask: 1
+    - _CoatMask: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.5
