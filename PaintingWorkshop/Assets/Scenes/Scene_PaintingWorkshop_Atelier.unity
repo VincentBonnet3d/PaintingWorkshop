@@ -1766,7 +1766,7 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 3.3083415, y: 2.4747775, z: 5.415403}
+      m_BoxSize: {x: 5, y: 5, z: 7}
       m_BoxBlendDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
@@ -2152,7 +2152,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 3.3083415, y: 2.4747775, z: 5.415403}
+  m_BoxSize: {x: 5, y: 5, z: 7}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -2178,7 +2178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350408246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8004255, y: 2.1995542, z: -6.6619263}
+  m_LocalPosition: {x: 2.8004255, y: 2.417, z: -6.6619263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2494,13 +2494,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 20000
+  m_Intensity: 7500
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
-  m_VolumetricDimmer: 7.1
+  m_VolumetricDimmer: 3.09
   m_LightUnit: 2
   m_FadeDistance: 10000
   m_VolumetricFadeDistance: 10000
@@ -2556,20 +2556,20 @@ MonoBehaviour:
   m_ShadowResolution:
     m_Override: 512
     m_UseOverride: 0
-    m_Level: 3
+    m_Level: 2
   m_ShadowDimmer: 1
   m_VolumetricShadowDimmer: 1
   m_ShadowFadeDistance: 10000
   m_UseContactShadow:
     m_Override: 1
-    m_UseOverride: 0
+    m_UseOverride: 1
     m_Level: 1
   m_RayTracedContactShadow: 0
   m_ShadowTint: {r: 0, g: 0, b: 0, a: 1}
   m_PenumbraTint: 0
   m_NormalBias: 0.75
   m_SlopeBias: 0.5
-  m_ShadowUpdateMode: 1
+  m_ShadowUpdateMode: 0
   m_AlwaysDrawDynamicShadows: 0
   m_UpdateShadowOnLightMovement: 0
   m_CachedShadowTranslationThreshold: 0.01
@@ -2616,7 +2616,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.88699996, g: 0.68560874, b: 0.622674, a: 1}
-  m_Intensity: 20000
+  m_Intensity: 7500
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3588,7 +3588,7 @@ PrefabInstance:
     - target: {fileID: 3020998300759434016, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3020998300759434016, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
@@ -3613,7 +3613,7 @@ PrefabInstance:
     - target: {fileID: 3172071410327458500, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
       propertyPath: m_Lens.FieldOfView
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3172071410327458501, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
@@ -3758,7 +3758,7 @@ PrefabInstance:
     - target: {fileID: 5519367360903625197, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
       propertyPath: field of view
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5519367360903625197, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
@@ -3768,7 +3768,7 @@ PrefabInstance:
     - target: {fileID: 7903188105816254375, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
       propertyPath: antialiasing
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7903188105816254375, guid: d9d4b85f7f028304b89f91580c91947c,
         type: 3}
@@ -12270,10 +12270,30 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6706733704454192007, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706733704454192007, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706733704454192007, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.702
+      objectReference: {fileID: 0}
     - target: {fileID: 7064261292104373084, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_Range
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
@@ -12283,7 +12303,7 @@ PrefabInstance:
     - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
       propertyPath: m_Intensity
-      value: 982.9334
+      value: 975.604
       objectReference: {fileID: 0}
     - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
@@ -12293,17 +12313,22 @@ PrefabInstance:
     - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
       propertyPath: m_ColorTemperature
-      value: 5208
+      value: 5724
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472667006938065303, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_UseViewFrustumForShadowCasterCull
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7885911478939088204, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
@@ -12313,7 +12338,12 @@ PrefabInstance:
     - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
       propertyPath: m_Intensity
-      value: 601.6288
+      value: 597.14264
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
@@ -12322,8 +12352,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
         type: 3}
+      propertyPath: m_ShadowUpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_ShadowResolution.m_Level
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
       propertyPath: m_ShadowResolution.m_Override
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124093594397464036, guid: b8dc8b052e214254f8fbbd5945d7b7a6,
+        type: 3}
+      propertyPath: m_ShadowResolution.m_UseOverride
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8dc8b052e214254f8fbbd5945d7b7a6, type: 3}
@@ -13256,7 +13306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1390955751
 MonoBehaviour:
   m_ObjectHideFlags: 0

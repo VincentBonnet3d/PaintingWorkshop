@@ -19,6 +19,10 @@ public class Teleportation : MonoBehaviour
             Initiate.Fade("Scene_PaintingWorkshop_Atelier", Color.black, 1);
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
 }
