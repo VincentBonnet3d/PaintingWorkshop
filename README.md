@@ -1,7 +1,6 @@
 # PaintingWorkshop
 
-
-Projet 3D - Vincent BONNET
+Unity Project of my 3D real time environment - Painting Workshop - Vincent BONNET
 
 ________________________________________
 
